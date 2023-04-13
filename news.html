@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tin tức</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./assets/animation/animate.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/carousel/flickity.min.css">
+    <link rel="stylesheet" href="./assets/fancybox/jquery.fancybox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header_content w-100 h-100">
+        <div class="container w-100 h-100">
+            <div class="flex-row w-100 h-100">
+                <div class="header__bars d-block d-lg-none">
+                    <svg height="21px" viewBox="0 -53 384 384" width="21px" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path></svg>
+                </div>
+                <div class="header_logo">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo_header.jpg" alt="">
+                    </a>
+                </div>
+                <div class="header_main d-none d-lg-flex h-100">
+                    <div class="menu_header h-100">
+                        <ul class="header_nav header_nav_menu d-flex h-100 align-items-center">
+                            <li class="menu_item current_menu_item current_page_item">
+                                <a href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./introduce.html">Giới thiệu</a>
+                            </li>
+                            <li class="menu_item menu-item-has-children">
+                                <a href="./service_seo.html">Dịch vụ</a>
+                                <ul class="sub_menu">
+                                    <li class="menu_item">
+                                        <a href="./service_seo.html">Dịch vụ SEO</a>
+                                    </li>
+                                    <li class="menu_item">
+                                        <a href="./service_desgin_web.html">Dịch vụ Thiết kế web</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_item menu-item-has-children">
+                                <a href="./projects.html">Dự án</a>
+                                <ul class="sub_menu">
+                                    <li class="menu_item">
+                                        <a href="./service_seo.html">Dự án - Case Study</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_item ">
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                            <li class="menu_item ">
+                                <a href="./news.html">Tin tức</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_call d-flex h-100 align-items-center">
+                        <a href="tel:0987654321" class="btn">
+                            Gọi ngay
+                        </a>
+                    </div>
+                </div>
+                <div class="header_right d-block d-lg-none"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-mobile d-flex d-lg-none">
+    <div class="menu-mobile-inner">
+        <div class="menu-mobile-account d-flex align-items-center position-relative">
+            <div class="menu-mobile-close position-absolute d-flex align-items-center justify-content-center">
+                <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                    <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                </svg>  
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-item current-menu-item">
+                    <a href="./index.html">
+                        Trang chủ
+                    </a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="./introduce.html">Giới thiệu</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="./service_desgin_web.html">Dịch vụ</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="./service_seo.html">Dịch vụ SEO</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./service_desgin_web.html">Dịch vụ Thiết kế web</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="./projects.html">Dự án</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="./projects.html">Dự án - Case Study</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">    
+                    <a href="./contact.html">Liên hệ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="./news.html">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header_call d-flex align-items-center justify-content-center">
+            <a href="tel:0987654321" class="btn">
+                Gọi ngay
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+
+<main class="news_page">
+    <!-- Tiêu đề trang -->
+    <section class="bread_crumb_about" style="background-image: url(./assets/images/intro_about_bg.jpg);">
+        <div class="section_content">
+            <div class="container">
+                <div class="bread_crumb_about_content">
+                    <h1 class=" wow fadeInUp" data-wow-delay="0.25s">Tin tức</h1>
+                    <div class="bread_crumb_about_txt wow fadeInUp" data-wow-delay="0.25s">
+                        Tổng hợp các bài viết chia sẻ về lĩnh vực SEO được đúc kết từ kiến thức và kinh nghiệm thực chiến của OPTIMIZE qua hàng trăm dự án, giúp bạn có được những góc nhìn thực tế.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nội dung trang Tin tức -->
+    <section class="news_page_content">
+        <div class="section_content">
+            <div class="container">
+                <!-- Ở đây đặt phần chuyển link -->
+                <div class="web__choose">
+                    <ul>
+                        <li class="web__choose_item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="web__choose_item_ct active">
+                                <a href="" class="">
+                                    <div class="img">
+                                        <img src="./assets/images/warehouse_1.png" alt="">
+                                    </div>
+                                    <h3 class="web__choose_item_title">
+                                        Tất cả
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="web__choose_item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="web__choose_item_ct">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/warehouse_2.png" alt="">
+                                    </div>
+                                    <h3 class="web__choose_item_title">
+                                        Lĩnh vực sức khỏe
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="web__choose_item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="web__choose_item_ct">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/warehouse_3.png" alt="">
+                                    </div>
+                                    <h3 class="web__choose_item_title">
+                                        Lĩnh vực thực phẩm
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="web__choose_item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="web__choose_item_ct">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/warehouse_4.png" alt="">
+                                    </div>
+                                    <h3 class="web__choose_item_title">
+                                        Lĩnh vực sức khỏe
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="web__choose_item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="web__choose_item_ct">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/warehouse_5.png" alt="">
+                                    </div>
+                                    <h3 class="web__choose_item_title">
+                                        Lĩnh vực vận chuyển
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="web__choose_item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="web__choose_item_ct">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/warehouse_6.png" alt="">
+                                    </div>
+                                    <h3 class="web__choose_item_title">
+                                        Lĩnh vực du lịch
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Đặt nội dung các phần tin tức-->
+                <div class="news_page_cate">
+                    <div class="news_page_cate_item">
+                        <h2 class="news_page_cate_item_title wow fadeInUp" data-wow-delay="0.25s">Tin tức ABC</h2>
+                        <div class="news_page_cate_item_content d-flex h-100 align-items-start">
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Top 10 Công Cụ Nghiên Cứu Từ Khóa SEO Tốt Nhất Hiện Nay</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_page_cate_item_choosePage wow fadeInUp" data-wow-delay="0.25s">
+                            <ul>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.96231 11.6562L7.37321 10.2387L4.10297 6.98376L17.708 6.97007L17.706 4.97007L4.13824 4.98373L7.35338 1.7535L5.93586 0.342596L0.292229 6.01265L5.96231 11.6562Z" fill="#1672EC"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class="currentpage wow fadeInUp" data-wow-delay="0.25s">1</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">2</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <span class="extend wow fadeInUp" data-wow-delay="0.25s">...</span>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">10</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="news_page_cate_item">
+                        <h2 class="news_page_cate_item_title wow fadeInUp" data-wow-delay="0.25s">Tin tức ABC</h2>
+                        <div class="news_page_cate_item_content d-flex h-100 align-items-start">
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Top 10 Công Cụ Nghiên Cứu Từ Khóa SEO Tốt Nhất Hiện Nay</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_page_cate_item_choosePage wow fadeInUp" data-wow-delay="0.25s">
+                            <ul>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.96231 11.6562L7.37321 10.2387L4.10297 6.98376L17.708 6.97007L17.706 4.97007L4.13824 4.98373L7.35338 1.7535L5.93586 0.342596L0.292229 6.01265L5.96231 11.6562Z" fill="#1672EC"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class="currentpage wow fadeInUp" data-wow-delay="0.25s">1</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">2</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <span class="extend wow fadeInUp" data-wow-delay="0.25s">...</span>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">10</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="news_page_cate_item">
+                        <h2 class="news_page_cate_item_title wow fadeInUp" data-wow-delay="0.25s">Tin tức ABC</h2>
+                        <div class="news_page_cate_item_content d-flex h-100 align-items-start">
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Top 10 Công Cụ Nghiên Cứu Từ Khóa SEO Tốt Nhất Hiện Nay</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="news_item_content">
+                                    <div class="news_item_img">
+                                        <div class="img_block">
+                                            <img src="./assets/images/news_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_item_content_info">
+                                        <h3>
+                                            <a href="./news_details.html" class="text-line">Lorem ipsum Lorem ipsum</a>
+                                        </h3>
+                                        <div class="news_item_txt text-line">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                        <div class="news_item_btn">
+                                            <a href="./news_details.html" class="btn">
+                                                <span>
+                                                    Xem thêm
+                                                </span>
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_page_cate_item_choosePage wow fadeInUp" data-wow-delay="0.25s">
+                            <ul>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.96231 11.6562L7.37321 10.2387L4.10297 6.98376L17.708 6.97007L17.706 4.97007L4.13824 4.98373L7.35338 1.7535L5.93586 0.342596L0.292229 6.01265L5.96231 11.6562Z" fill="#1672EC"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class="currentpage wow fadeInUp" data-wow-delay="0.25s">1</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">2</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <span class="extend wow fadeInUp" data-wow-delay="0.25s">...</span>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">10</a>
+                                </li>
+                                <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                                    <a href="" class=" wow fadeInUp" data-wow-delay="0.25s">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.0377 0.34375L10.6268 1.76127L13.897 5.01624L0.291992 5.02993L0.294005 7.02993L13.8618 7.01627L10.6466 10.2465L12.0641 11.6574L17.7078 5.98735L12.0377 0.34375Z" fill="#1672EC"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    
+<!-- Css Footer -->
+<footer style="background-image: url(./assets/images/footer_bg.jpg);">
+    <div class="footer_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <div class="img logo_footer wow fadeInUp" data-wow-delay="0.25s">
+                        <img src="./assets/images/logo_footer.png" alt="">
+                    </div>
+                    <div class="footer_content_ct wow fadeInUp" data-wow-delay="0.25s">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="footer_content_title wow fadeInUp" data-wow-delay="0.25s">
+                        Thông tin công ty
+                    </h3>
+                    <ul class="footer_content_infor">
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <a href="./introduce.html">Giới thiệu</a>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <a href="#">Hồ sơ năng lực</a>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <a href="#">Công nghệ</a>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <a href="#">Site map</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="footer_content_title wow fadeInUp" data-wow-delay="0.25s">
+                        Liên hệ
+                    </h3>
+                    <ul class="footer_content_contact">
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.4043 7.06104L12.0002 11.859L21.5963 7.06098C21.5239 5.80056 20.4789 4.80078 19.2003 4.80078H4.8003C3.52172 4.80078 2.47666 5.8006 2.4043 7.06104Z" fill="white"/>
+                                    <path d="M21.6004 9.74219L12.0003 14.5422L2.40039 9.74226V16.8007C2.40039 18.1262 3.47491 19.2007 4.80039 19.2007H19.2004C20.5259 19.2007 21.6004 18.1262 21.6004 16.8007V9.74219Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <span>
+                                Gmail: tuvan@optimize.vn
+                            </span>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="svg">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.9554 14.3408C18.734 14.1049 17.9523 13.4077 16.5154 12.4853C15.0679 11.5547 14.0004 10.9746 13.6942 10.8393C13.6672 10.8273 13.6375 10.8229 13.6082 10.8266C13.5789 10.8302 13.5512 10.8418 13.528 10.86C13.0347 11.2447 12.2043 11.9513 12.1598 11.9895C11.8722 12.2359 11.8722 12.2359 11.6368 12.1591C11.2229 12.0234 9.93699 11.3406 8.81647 10.2175C7.69596 9.09445 6.97794 7.77673 6.84222 7.36321C6.76461 7.12741 6.76461 7.12741 7.01186 6.83986C7.05003 6.79532 7.75703 5.96491 8.14171 5.47208C8.15995 5.44888 8.17153 5.42114 8.17519 5.39184C8.17885 5.36255 8.17446 5.33282 8.16249 5.30583C8.0272 4.9992 7.44701 3.93212 6.5165 2.48462C5.59277 1.04814 4.89638 0.266495 4.66057 0.0451066C4.63893 0.0246867 4.61218 0.0104815 4.58315 0.00398773C4.55411 -0.00250602 4.52386 -0.00104779 4.49559 0.00820859C3.67131 0.291469 2.87601 0.652905 2.12054 1.08758C1.39125 1.51154 0.700792 1.99904 0.0572236 2.54442C0.0347582 2.56352 0.0179153 2.58837 0.0085011 2.61631C-0.000913057 2.64426 -0.00254328 2.67424 0.00378517 2.70304C0.0924252 3.11612 0.516116 4.84058 1.83087 7.22919C3.17235 9.66701 4.10201 10.916 6.07203 12.8793C8.04204 14.8425 9.3305 15.8281 11.7709 17.1696C14.1595 18.4844 15.8848 18.9085 16.297 18.9963C16.3259 19.0025 16.3559 19.0009 16.3839 18.9915C16.4119 18.9821 16.4368 18.9653 16.4561 18.9428C17.0013 18.2993 17.4887 17.6088 17.9125 16.8795C18.3471 16.124 18.7085 15.3287 18.9918 14.5045C19.0009 14.4764 19.0023 14.4464 18.9959 14.4176C18.9895 14.3889 18.9755 14.3623 18.9554 14.3408Z" fill="white"/>
+                                </svg> 
+                            </div>                               
+                            <span>
+                                Hotline/Zalo: 0981.022.044
+                            </span>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="svg">
+                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.364 15.3639L9 21.7279L2.636 15.3639C1.37734 14.1052 0.520187 12.5016 0.172928 10.7558C-0.17433 9.00995 0.00390685 7.20035 0.685099 5.55582C1.36629 3.91129 2.51984 2.50569 3.99988 1.51677C5.47992 0.527838 7.21998 0 9 0C10.78 0 12.5201 0.527838 14.0001 1.51677C15.4802 2.50569 16.6337 3.91129 17.3149 5.55582C17.9961 7.20035 18.1743 9.00995 17.8271 10.7558C17.4798 12.5016 16.6227 14.1052 15.364 15.3639ZM9 10.9999C9.53044 10.9999 10.0391 10.7892 10.4142 10.4141C10.7893 10.0391 11 9.53035 11 8.99992C11 8.46949 10.7893 7.96078 10.4142 7.58571C10.0391 7.21064 9.53044 6.99992 9 6.99992C8.46957 6.99992 7.96086 7.21064 7.58579 7.58571C7.21072 7.96078 7 8.46949 7 8.99992C7 9.53035 7.21072 10.0391 7.58579 10.4141C7.96086 10.7892 8.46957 10.9999 9 10.9999Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <span>
+                                Địa chỉ: Số 16 Trần Quốc Vượng, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Tp Hà Nội
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+</footer>
+</body>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>    <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/animation/wow.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/carousel/flickity.pkgd.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+</html>
